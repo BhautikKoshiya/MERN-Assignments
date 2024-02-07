@@ -10,7 +10,7 @@ const CompanyBranding = ({ onSignInChange }) => {
     onSignInChange((prevIsSignIn) => !prevIsSignIn);
     setIsSignedIn(!isSignedIn);
   }; 
-   const buttonText = isSignedIn ? "SIGN OUT" : "SIGN IN";
+   const buttonText = isSignedIn ? "SIGN UP" : "SIGN IN";
 
 
   return (
