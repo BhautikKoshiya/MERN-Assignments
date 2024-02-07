@@ -4,7 +4,6 @@ import LogoImage from "../../../../../assets/logo.jpeg";
 
 const CompanyBranding = ({ onSignInChange }) => {
   
-  const [isSignIn, setIsSignIn] = useState(false);
   const handleSignIn = () => {
     // Toggle the value and pass it to the parent component
     onSignInChange((prevIsSignIn) => !prevIsSignIn);
@@ -13,7 +12,7 @@ const CompanyBranding = ({ onSignInChange }) => {
   return (
     <div className="company-branding-wrapper">
       <div className="logo-wrapper">
-        <img src={LogoImage} className="logo" />
+        <img src={LogoImage} className="logo" alt="logo of website" />
       </div>
       {/* <h1 className="logo">ISSUESTACK</h1> */}
       <h2 className="title-text">

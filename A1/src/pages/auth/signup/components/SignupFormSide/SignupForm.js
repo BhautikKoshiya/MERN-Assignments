@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { TextField } from "@mui/material";
 import { Button } from "@mui/material";
 
@@ -8,7 +8,6 @@ const SignupForm = ({isSignIn}) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [organization, setOrganization] = useState("");
-  const [confirmPassword, setConfirmPassword] = useState("");
 
 
   const handleSubmit = (event) => {
