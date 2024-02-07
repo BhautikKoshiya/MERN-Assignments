@@ -1,0 +1,114 @@
+.signup-wrapper {
+  display: flex;
+  min-height: 100vh;
+
+  .company-branding-wrapper {
+    max-width: 560px;
+    width: 100%;
+    background-color: #3d9c86;
+    text-align: center;
+    padding: 150px 0;
+
+    .logo-wrapper {
+      .logo {
+        width: 100%;
+      }
+    }
+
+    .title-text {
+      color: #ffffff;
+      font-weight: bold;
+      margin: 15px;
+    }
+
+    .signin-button {
+      margin-top: 20px;
+      color: #ffffff;
+      border-radius: 45px;
+      border-color: #ffffff;
+    }
+  }
+
+  .signup-form-side-wrapper {
+    flex-grow: 1;
+    padding: 150px 100px 100px 100px;
+
+    .create-account-title {
+      color: #3d9c86;
+      text-align: center;
+    }
+
+    .signup-form {
+      gap: 30px;
+      display: flex;
+      flex-direction: column;
+
+      .input-field {
+        flex-grow: 1;
+      }
+
+      .input-field-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .name-field-wrapper {
+        margin-top: 25px;
+        gap: 30px;
+      }
+    }
+
+    .signup-button-wrapper {
+      display: flex;
+      justify-content: center;
+
+      .signup-button {
+        margin-top: 20px;
+        color: #ffffff;
+        border-radius: 45px;
+        border-color: #ffffff;
+        background-color: #3d9c86;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .signup-form-side-wrapper {
+      padding: 150px 50px 100px 50px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+
+    .company-branding-wrapper {
+      max-width: 100%;
+    }
+
+    .signup-form-side-wrapper {
+      padding: 25px 50px 100px 50px;
+    }
+  }
+  @media screen and (max-width: 425px) {
+    .company-branding-wrapper {
+      .title-text {
+        font-size: 24px;
+      }
+    }
+    .signup-form-side-wrapper {
+      padding: 25px 25px 100px 25px;
+    }
+  }
+  @media screen and (max-width: 320px) {
+    .company-branding-wrapper {
+      .title-text {
+        font-size: 16px;
+      }
+    }
+
+    .signup-form-side-wrapper {
+      .create-account-title {
+        font-size: 18px;
+      }
+    }
+  }
+}
