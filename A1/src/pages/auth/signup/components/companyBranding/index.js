@@ -3,11 +3,15 @@ import { Button } from "@mui/material";
 import LogoImage from "../../../../../assets/logo.jpeg";
 
 const CompanyBranding = ({ onSignInChange }) => {
-  
+  const [isSignedIn, setIsSignedIn] = useState(false);
+
   const handleSignIn = () => {
     // Toggle the value and pass it to the parent component
     onSignInChange((prevIsSignIn) => !prevIsSignIn);
-  };
+    setIsSignedIn(!isSignedIn);
+  }; 
+   const buttonText = isSignedIn ? "SIGN OUT" : "SIGN IN";
+
 
   return (
     <div className="company-branding-wrapper">
@@ -20,7 +24,7 @@ const CompanyBranding = ({ onSignInChange }) => {
         innovation
       </h2>
       <Button variant="outlined" size="large" className="signin-button" onClick={handleSignIn}>
-        SIGN IN
+      {buttonText}
       </Button>
     </div>
   );
